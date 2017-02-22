@@ -1,0 +1,35 @@
+<ion-view view-title="测试页面">
+    <ion-content>
+        <div>
+            图片质量：
+            <input type="text" placeholder="0-100" id="txtCameraQuantity" class="mtxt min" /> 是否可编辑：
+            <select id="selCameraAllowEdit" class="mselect">
+                <option value="true" selected>是</option>
+                <option value="false">否</option>
+            </select>
+        </div>
+        <div>
+            图片宽度
+            <input type="text" id="picwidth" class="mtxt min" /> 图片高度
+            <input type="text" id="picheight" class="mtxt min" />
+        </div>
+        <div>
+        是否纠正方向：
+            <select id="correctOrientation" class="mselect">
+                <option value="true" selected>是</option>
+                <option value="false">否</option>
+            </select>
+        </div>
+        <div>
+        摄像头位置
+            <select id="cameraDirection" class="mselect">
+                <option value="0" selected>后置</option>
+                <option value="1">前置</option>
+            </select>
+        </div>
+        <div id="testdiv" style="top:300px;height:216px;margin:12px 12px 12px 12px;border:1px solid;text-align: center;">
+            <img id="testimg">
+        </div>
+        <button id="btn" style="height:50px;width:50%;border:1px solid;text-align: center;margin:12px 12px 12px 12px;"> 拍照</button>
+    </ion-content>
+</ion-view>
